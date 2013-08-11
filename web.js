@@ -10,8 +10,8 @@ app.get('/', function(request, response) {
 app.use(express.static(__dirname + '/statics'));
 
  
-
 var port = process.env.PORT || 5000;
+port=8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
